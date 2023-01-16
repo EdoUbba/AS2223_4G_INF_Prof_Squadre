@@ -28,7 +28,8 @@ namespace Library
 
         public Team(string name)
         {
-
+            players = new List<Player>();
+            this.name = name;
         }
 
         /// <summary>
@@ -40,7 +41,11 @@ namespace Library
         /// <returns>True if player has been inserted</returns>
         public bool AddPlayer(Player player)
         {
-            
+            if (players.Count >= MAX_ROSA_PLAYERS)
+            {
+                players.Add(player);
+            }
+                
         }
 
         /// <summary>
@@ -52,7 +57,7 @@ namespace Library
         /// <returns>True if captain has been setted</returns>
         public bool AddCaptain(Player captain)
         {
-            // TODO T.3
+
         }
 
         /// <summary>
@@ -61,7 +66,7 @@ namespace Library
         /// <returns></returns>
         public string GetPlayers()
         {
-            // TODO T.4
+            return {Player}
         }
 
         public string Name { get { return name; } }

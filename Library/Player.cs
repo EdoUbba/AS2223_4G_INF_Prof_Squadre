@@ -22,7 +22,7 @@ namespace Library
 
         public string Description()
         {   
-            return Player
+            
         }
 
         public ERole Role { 
