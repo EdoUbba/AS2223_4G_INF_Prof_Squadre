@@ -12,7 +12,7 @@ namespace UnitTest
         [Test]
         public void AddPlayers()
         {
-            // TODO U.1
+            Assert.That(Team.AddPlayer(13), Is.True);
         }
 
         [Test]

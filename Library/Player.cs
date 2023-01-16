@@ -15,16 +15,18 @@ namespace Library
         }
         public Player(string name, string surname, ERole role)
         {
-            // TODO P.1
+            name = "nome";
+            surname = "cognome";
+            ERole eRole = role;
         }
 
         public string Description()
-        {
-            // TODO P.2
+        {   
+            return Player
         }
 
         public ERole Role { 
-            // TODO P.3
+            get { return role; }
         }
 
     }
