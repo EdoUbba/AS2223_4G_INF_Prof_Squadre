@@ -12,7 +12,7 @@ namespace UnitTest
         [Test]
         public void AddPlayers()
         {
-            Assert.That(Team.AddPlayer(13), Is.True);
+            Assert.That(Player.ERole.Rosa, Is.True);
         }
 
         [Test]

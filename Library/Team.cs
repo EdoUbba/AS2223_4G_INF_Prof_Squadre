@@ -44,7 +44,9 @@ namespace Library
             if (players.Count >= MAX_ROSA_PLAYERS)
             {
                 players.Add(player);
+                return true;
             }
+            
                 
         }
 
@@ -57,7 +59,10 @@ namespace Library
         /// <returns>True if captain has been setted</returns>
         public bool AddCaptain(Player captain)
         {
-
+            if(captain.Role == Player.ERole.Riserva)
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -66,7 +71,7 @@ namespace Library
         /// <returns></returns>
         public string GetPlayers()
         {
-            return {Player}
+            return { }
         }
 
         public string Name { get { return name; } }
